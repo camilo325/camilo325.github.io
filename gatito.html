@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gatito llorando</title>
+  <style>
+  body{display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#000;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Arial;color:#f7f7f7}
+    .container{text-align:center;padding:2rem}
+    .image-box{position:relative;display:inline-block}
+    .image-box img{max-width:560px;width:90vw;height:auto;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+  /* hide the decorative tear (was creating a blue spot) */
+  .tear{display:none !important}
+    .actions{display:flex;gap:1rem;justify-content:center;margin-top:1.25rem}
+  .btn{padding:1.6rem 2.4rem;border-radius:12px;border:0;color:#fff;font-weight:800;cursor:pointer;font-size:1.6rem}
+    .btn.green{background:#2ecc71}
+  .btn.red{background:#e74c3c}
+    @media (max-width:480px){.actions{flex-direction:column}.btn{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¿Me perdonas?</h1>
+    <div class="image-box" aria-hidden="false">
+      <img src="img/Gatos Lindos Y Tiernos.jpeg" alt="Gatito triste" />
+      <svg class="tear" viewBox="0 0 24 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="g2" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#9bd7ff" />
+            <stop offset="100%" stop-color="#4aa7ff" />
+          </linearGradient>
+        </defs>
+        <path d="M12 0C7 8 4 12 4 18c0 6.627 5.373 12 12 12s12-5.373 12-12C28 12 25 8 20 0c0 0-4 0-8 0z" fill="url(#g2)"/>
+      </svg>
+    </div>
+
+    <div class="actions" role="group" aria-label="Respuestas">
+      <button class="btn green" onclick="location.href='sii.html'">Si</button>
+      <button class="btn red" onclick="location.href='no1.html'">No</button>
+    </div>
+  </div>
+</body>
+</html>

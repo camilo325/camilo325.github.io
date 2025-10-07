@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se que fue grave</title>
+    <style>
+        :root{font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Arial}
+        body{min-height:100vh;margin:0;background:#000;color:#fff;display:flex;align-items:center;justify-content:center}
+        .card{text-align:center;padding:2rem}
+    h1{font-size:2.6rem;margin:0 0 0.75rem;color:#ffffff}
+    @media (max-width:480px){h1{font-size:1.6rem}}
+    .photo{max-width:520px;margin:0 auto;border-radius:14px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.6)}
+    /* ensure top corners of the image are rounded too */
+    .photo img{display:block;width:100%;height:auto;border-top-left-radius:14px;border-top-right-radius:14px}
+        .actions{display:flex;gap:1rem;justify-content:center;margin-top:1.25rem}
+        /* base button */
+        .btn{border:0;border-radius:10px;color:#fff;font-weight:700;cursor:pointer}
+    /* verde 3x larger relative baseline (match no1.html) */
+    .btn.green{background:#2ecc71;padding:2.4rem 3.6rem;font-size:2.4rem}
+        /* rojo un poco mas pequeño */
+        .btn.red{background:#e74c3c;padding:0.6rem 1rem;font-size:1rem}
+        @media (max-width:480px){.actions{flex-direction:column}.btn.green{width:100%;box-sizing:border-box}.btn.red{width:100%;box-sizing:border-box}}
+    </style>
+</head>
+<body>
+    <main class="card" role="main">
+        <h1>se que fue grave pero te pido peldon</h1>
+        <div class="photo" aria-hidden="false">
+            <p style="color:#555;margin-top:0">ti amos mi vida</p>
+            <img src="img/gatinho tristinho.jpeg" alt="gatito" />
+        </div>
+        <div class="actions" role="group" aria-label="Respuestas">
+            <button class="btn green" onclick="location.href='sii.html'">Si</button>
+            <button class="btn red" onclick="location.href='no3.html'">No</button>
+        </div>
+    </main>
+</body>
+</html>

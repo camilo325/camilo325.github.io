@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perdón</title>
+    <style>
+        :root{font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Arial}
+        body{min-height:100vh;margin:0;background:#000;color:#fff;display:flex;align-items:center;justify-content:center}
+        .card{width:100%;max-width:900px;padding:2rem;text-align:center}
+        h1{font-size:2.6rem;margin:0 0 1rem;color:#fff}
+        @media (max-width:480px){h1{font-size:1.6rem}}
+    .photo{width:520px;max-width:96vw;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,0.6)}
+    .photo img{display:block;width:100%;height:auto;border-top-left-radius:20px;border-top-right-radius:20px}
+
+        .actions{display:flex;flex-direction:column;gap:0.9rem;align-items:center;margin-top:1.25rem}
+        .btn{border:0;border-radius:14px;color:#fff;font-weight:800;cursor:pointer}
+    /* boton verde mas ancho y notablemente mas alto */
+    .btn.green{background:#2ecc71;width:120%;max-width:680px;padding:2.6rem 1.6rem;font-size:1.5rem;line-height:1}
+    /* boton rojo: un poco más pequeño que en no3.html */
+        .btn.red{background:#e74c3c;width:15%;padding:0.35rem 0.5rem;font-size:0.9rem}
+
+        /* ajuste para que el botón grande no desborde en móviles */
+        @media (max-width:700px){
+           .btn.green{width:86%;padding:2rem 1rem}
+           .btn.red{width:30%;padding:0.4rem 0.5rem}
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <h1>te pedire que me perdones 
+            <br>hasta que 
+            <br>ya no pueda mas</h1>
+
+        <div class="photo" aria-hidden="false">
+            <img src="img/gato llorando con un peluche.jpeg" alt="gatito con peluche" />
+        </div>
+
+        <div class="actions" role="group" aria-label="Respuestas">
+            <button class="btn green" type="button" onclick="location.href='sii.html'">Si</button>
+            <button class="btn red" type="button" onclick="location.href='no5.html'">No</button>
+        </div>
+    </main>
+</body>
+</html>
